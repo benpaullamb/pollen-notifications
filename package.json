@@ -5,16 +5,28 @@
     "pollen-notifications": "bin/pollen-notifications.js"
   },
   "scripts": {
-    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "build": "webpack",
     "cdk": "cdk",
     "test": "jest"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.108.0",
-    "aws-cdk": "1.108.0",
-    "jest": "^26.4.2"
+    "@aws-cdk/assert": "1.109.0",
+    "@aws-cdk/aws-events": "^1.109.0",
+    "@aws-cdk/aws-events-targets": "^1.109.0",
+    "@aws-cdk/aws-lambda": "^1.109.0",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "aws-cdk": "1.109.0",
+    "babel-loader": "^8.2.2",
+    "jest": "^26.4.2",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.108.0"
+    "@aws-cdk/core": "1.109.0",
+    "aws-sdk": "^2.931.0",
+    "axios": "^0.21.1",
+    "core-js": "^3.14.0",
+    "regenerator-runtime": "^0.13.7"
   }
 }
