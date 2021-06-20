@@ -6,7 +6,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "cdk": "cdk",
     "test": "jest"
   },
   "devDependencies": {
